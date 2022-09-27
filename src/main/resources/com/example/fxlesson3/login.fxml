@@ -16,7 +16,7 @@
         <TextField id="passwordTextField" fx:id="passwordTextField" layoutX="39.0" layoutY="130.0" prefHeight="25.0" prefWidth="253.0" promptText="enter password" />
         <TextField id="emailTextField" fx:id="emailTextField" layoutX="40.0" layoutY="90.0" prefHeight="25.0" prefWidth="253.0" promptText="enter email" />
         <Label id="incorrectLabel" fx:id="incorrectLabel" alignment="CENTER" layoutX="29.0" layoutY="183.0" text="incorrect input,try again!" textFill="#f70d0d" />
-        <Button id="loginButton" fx:id="loginButton" layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Login" />
-        <Button id="registrationButton" fx:id="registrationButton" layoutX="29.0" layoutY="282.0" mnemonicParsing="false" onAction="#registrationButtonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Registration" />
+        <Button id="loginButton" fx:id="loginButton" layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginbuttonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Login" />
+        <Button id="registrationButton" fx:id="registrationButton" layoutX="29.0" layoutY="282.0" mnemonicParsing="false" onAction="#registrationbuttonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Registration" />
     </children>
 </AnchorPane>
