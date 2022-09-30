@@ -36,7 +36,7 @@ public class RegistrationController {
     public void registerButtonClicked(ActionEvent event){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("Welcomepage.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("welcomepage.fxml"));
             Scene scene = new Scene(fxmlLoader.load(),600, 400);
             Stage stage = new Stage();
             stage.setTitle("Welcome page");

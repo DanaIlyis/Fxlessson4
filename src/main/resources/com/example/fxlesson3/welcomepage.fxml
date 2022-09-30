@@ -1,15 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="438.0" prefWidth="324.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="AnchorPane" prefHeight="400.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.WelcomePageController">
     <children>
-        <Label layoutX="35.0" layoutY="41.0" prefHeight="47.0" prefWidth="316.0" text="Welcome Page" textFill="#eb0000">
-            <font>
-                <Font name="System Bold Italic" size="32.0" />
-            </font>
-        </Label>
+        <BorderPane layoutX="114.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="678.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/exit1.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <HBox layoutX="239.0" layoutY="1.0" prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                            <children>
+                                <Button onAction="#showDashboard" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Dashboard">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/dash1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button onAction="#showAdd" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="ADD">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button onAction="#showReport" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Report">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/report1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button onAction="#showBackup" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="BackUp">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/data1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Label fx:id="Menu2" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.007998687500045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="618.063980710938" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/menu1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Menu1" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="594.0" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/menu1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane fx:id="Anchoslider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                                <Button alignment="BASELINE_LEFT" onAction="#showDashboard" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Dashboard" textFill="#f5f5f5">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/dash.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" onAction="#showAdd" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="ADD" textFill="#e8dfdf">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" onAction="#showReport" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Report" textFill="#d0d0d0">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/report.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" onAction="#showBackup" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="BackUp" textFill="#e8e8e8">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/data.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane fx:id="panee" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
     </children>
 </AnchorPane>

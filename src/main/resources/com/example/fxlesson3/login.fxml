@@ -6,17 +6,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lesson_3fx.LoginController">
     <children>
-        <Label id="loginLabel" fx:id="loginLabel" alignment="CENTER" layoutX="69.0" layoutY="14.0" prefHeight="64.0" prefWidth="214.0" text="Login Page" textFill="RED">
+        <Label id="loginLabel" fx:id="loginLabel" alignment="CENTER" layoutX="127.0" layoutY="37.0" text="Login Page" textFill="#fbedff">
             <font>
-                <Font name="System Bold Italic" size="28.0" />
+                <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-        <TextField id="passwordTextField" fx:id="passwordTextField" layoutX="39.0" layoutY="130.0" prefHeight="25.0" prefWidth="253.0" promptText="enter password" />
-        <TextField id="emailTextField" fx:id="emailTextField" layoutX="40.0" layoutY="90.0" prefHeight="25.0" prefWidth="253.0" promptText="enter email" />
-        <Label id="incorrectLabel" fx:id="incorrectLabel" alignment="CENTER" layoutX="29.0" layoutY="183.0" text="incorrect input,try again!" textFill="#f70d0d" />
-        <Button id="loginButton" fx:id="loginButton" layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginbuttonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Login" />
-        <Button id="registrationButton" fx:id="registrationButton" layoutX="29.0" layoutY="282.0" mnemonicParsing="false" onAction="#registrationbuttonClicked" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: red;" text="Registration" />
+        <TextField id="passwordTextField" fx:id="passwordTextField" layoutX="29.0" layoutY="130.0" prefHeight="25.0" prefWidth="281.0" promptText="enter password" />
+        <TextField id="emailTextField" fx:id="emailTextField" layoutX="29.0" layoutY="90.0" prefHeight="25.0" prefWidth="281.0" promptText="enter email" />
+        <Label id="incorrectLabel" fx:id="incorrectLabel" alignment="CENTER" layoutX="29.0" layoutY="166.0" text="incorrect input,try again!" textFill="#f7f4f4">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Button id="loginButton" fx:id="loginButton" layoutX="29.0" layoutY="198.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: pink;" text="Login">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+        <Button id="registrationButton" fx:id="registrationButton" layoutX="200.0" layoutY="198.0" mnemonicParsing="false" onAction="#registrationButtonClicked" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: pink;" text="Registration">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
     </children>
 </AnchorPane>

@@ -8,18 +8,27 @@
 
 <AnchorPane prefHeight="420.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.RegistrationController">
     <children>
-        <Label id="registrationLabel" layoutX="77.0" layoutY="18.0" prefHeight="60.0" prefWidth="284.0" text="Registration Page" textFill="RED">
+        <Label id="registrationLabel" layoutX="127.0" layoutY="38.0" text="Registration Page" textFill="#faf8ff">
             <font>
-                <Font name="System Bold Italic" size="28.0" />
+                <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <TextField id="nameTextField" fx:id="nameTextField" layoutX="63.0" layoutY="89.0" prefHeight="25.0" prefWidth="237.0" promptText="enter name" />
-        <TextField id="surnameTextField" fx:id="surnameTextField" layoutX="61.0" layoutY="123.0" prefHeight="25.0" prefWidth="237.0" promptText="enter surname" />
-        <TextField id="groupTextField" fx:id="groupTextField" layoutX="59.0" layoutY="157.0" prefHeight="25.0" prefWidth="237.0" promptText="enter group" />
-        <TextField id="classroomTextField" fx:id="classroomTextField" layoutX="57.0" layoutY="189.0" prefHeight="25.0" prefWidth="237.0" promptText="enter classroom" />
-        <TextField id="emailTextField" fx:id="emailTextField" layoutX="58.0" layoutY="222.0" prefHeight="25.0" prefWidth="237.0" promptText="enter email" />
-        <TextField id="phonenumberTextField" fx:id="phonenumberTextField" layoutX="57.0" layoutY="257.0" prefHeight="25.0" prefWidth="237.0" promptText="enter phone number" />
-        <Button id="registerButton" fx:id="registerButton" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: red;" text="Register" />
-        <Button id="cancelButton" fx:id="cancelButton" layoutX="63.0" layoutY="332.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: red;" text="Cancel" />
+        <TextField id="nameTextField" fx:id="nameTextField" layoutX="36.0" layoutY="89.0" prefHeight="25.0" prefWidth="295.0" promptText="enter name">
+            <font>
+                <Font size="13.0" />
+            </font></TextField>
+        <TextField id="surnameTextField" fx:id="surnameTextField" layoutX="36.0" layoutY="123.0" prefHeight="25.0" prefWidth="295.0" promptText="enter surname" />
+        <TextField id="groupTextField" fx:id="groupTextField" layoutX="36.0" layoutY="157.0" prefHeight="25.0" prefWidth="295.0" promptText="enter group" />
+        <TextField id="classroomTextField" fx:id="classroomTextField" layoutX="36.0" layoutY="189.0" prefHeight="25.0" prefWidth="295.0" promptText="enter classroom" />
+        <TextField id="emailTextField" fx:id="emailTextField" layoutX="36.0" layoutY="222.0" prefHeight="25.0" prefWidth="295.0" promptText="enter email" />
+        <TextField id="phonenumberTextField" fx:id="phonenumberTextField" layoutX="36.0" layoutY="257.0" prefHeight="25.0" prefWidth="295.0" promptText="enter phone number" />
+        <Button id="registerButton" fx:id="registerButton" layoutX="204.0" layoutY="301.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: pink;" text="Register">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+        <Button id="cancelButton" fx:id="cancelButton" layoutX="36.0" layoutY="301.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: pink;" text="Cancel">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
     </children>
 </AnchorPane>
